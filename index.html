@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="J&M Soluciones Jurídicas Contables brinda asesoría legal, contable, tributaria, laboral, administrativa y en contrataciones públicas en Perú.">
+    <title>J&M Soluciones Jurídicas Contables | Asesoría Legal, Contable y Tributaria</title>
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header-pro" id="header">
+    <a class="logo" href="#inicio" aria-label="Ir al inicio">
+        <img src="img/logo.png" alt="Logo de J&M Soluciones Jurídicas Contables">
+        <div class="logo-text">
+            <strong>J&M</strong>
+            <span>Soluciones Jurídicas Contables</span>
+        </div>
+    </a>
+
+    <nav class="nav-pro" id="menu" aria-label="Menú principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Método</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="nav-contacto">Contacto</a>
+    </nav>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
+</header>
+
+<main>
+    <section id="inicio" class="hero fade-in">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="eyebrow">Asesoría jurídica, contable y tributaria</p>
+            <h1>Soluciones profesionales para empresas, entidades públicas y personas naturales</h1>
+            <p class="hero-text">
+                Brindamos orientación preventiva, defensa legal y acompañamiento técnico con enfoque estratégico, claridad normativa y atención personalizada.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="https://wa.me/51978381452?text=Hola%2C%20deseo%20solicitar%20asesor%C3%ADa%20jur%C3%ADdica%20o%20contable" target="_blank" rel="noopener">Solicitar asesoría</a>
+                <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+            </div>
+            <div class="hero-badges" aria-label="Áreas principales">
+                <span>Derecho Administrativo</span>
+                <span>Contrataciones Públicas</span>
+                <span>Tributario y Contable</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section intro fade-in">
+        <div class="section-header">
+            <p class="eyebrow dark">Enfoque profesional</p>
+            <h2>Asesoría integral, prevención de riesgos y defensa de intereses</h2>
+            <p>
+                Integramos criterios legales, contables y administrativos para atender controversias, procedimientos, obligaciones empresariales y necesidades de gestión pública con una visión ordenada y práctica.
+            </p>
+        </div>
+    </section>
+
+    <section id="servicios" class="section services-section fade-in">
+        <div class="section-header">
+            <p class="eyebrow dark">Cartera de servicios</p>
+            <h2>Áreas de atención especializada</h2>
+        </div>
+
+        <div class="services">
+            <article class="card">
+                <i class="fa-solid fa-calculator"></i>
+                <h3>Servicios contables y tributarios</h3>
+                <p>Declaraciones, obligaciones tributarias, organización contable, prevención de multas y acompañamiento ante requerimientos de SUNAT.</p>
+                <button class="btn-detalle" type="button" data-modal="modal-contable">Ver detalle</button>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-file-signature"></i>
+                <h3>Contrataciones públicas</h3>
+                <p>Asesoría en procedimientos de selección, revisión de bases, presentación de ofertas, apelaciones, ejecución contractual y controversias con el Estado.</p>
+                <button class="btn-detalle" type="button" data-modal="modal-contrataciones">Ver detalle</button>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-landmark"></i>
+                <h3>Gestión pública</h3>
+                <p>Soporte técnico-legal para entidades, funcionarios y servidores en procedimientos administrativos, informes, documentos de gestión y cumplimiento normativo.</p>
+                <button class="btn-detalle" type="button" data-modal="modal-gestion">Ver detalle</button>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <h3>Derecho administrativo</h3>
+                <p>Defensa en procedimientos sancionadores, recursos administrativos, nulidades, impugnaciones y procesos contencioso-administrativos.</p>
+                <button class="btn-detalle" type="button" data-modal="modal-administrativo">Ver detalle</button>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Derecho laboral</h3>
+                <p>Contratos, beneficios sociales, despidos, reposición, reconocimiento de vínculo laboral, defensa judicial y cumplimiento de obligaciones laborales.</p>
+                <button class="btn-detalle" type="button" data-modal="modal-laboral">Ver detalle</button>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-people-roof"></i>
+                <h3>Derecho civil y familia</h3>
+                <p>Contratos, obligaciones, propiedad, sucesiones, alimentos, tenencia, divorcio y defensa de derechos patrimoniales y familiares.</p>
+                <button class="btn-detalle" type="button" data-modal="modal-civil">Ver detalle</button>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-gavel"></i>
+                <h3>Derecho penal</h3>
+                <p>Defensa técnica, patrocinio en investigaciones fiscales, audiencias, medidas coercitivas y estrategias de protección procesal.</p>
+                <button class="btn-detalle" type="button" data-modal="modal-penal">Ver detalle</button>
+            </article>
+
+            <article class="card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Derecho constitucional</h3>
+                <p>Procesos de amparo, habeas corpus, habeas data, cumplimiento y protección de derechos fundamentales frente a actos arbitrarios.</p>
+                <button class="btn-detalle" type="button" data-modal="modal-constitucional">Ver detalle</button>
+            </article>
+        </div>
+    </section>
+
+    <section id="metodo" class="method-section fade-in">
+        <div class="section-header light">
+            <p class="eyebrow">Método de trabajo</p>
+            <h2>Atención ordenada desde el primer contacto</h2>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <span>01</span>
+                <h3>Evaluación inicial</h3>
+                <p>Revisamos el caso, documentos disponibles, plazos y riesgos principales.</p>
+            </div>
+            <div class="step">
+                <span>02</span>
+                <h3>Estrategia</h3>
+                <p>Definimos alternativas legales, contables o administrativas según el objetivo del cliente.</p>
+            </div>
+            <div class="step">
+                <span>03</span>
+                <h3>Ejecución</h3>
+                <p>Preparamos escritos, informes, recursos, expedientes, sustentos o acciones necesarias.</p>
+            </div>
+            <div class="step">
+                <span>04</span>
+                <h3>Seguimiento</h3>
+                <p>Acompañamos el avance del trámite, procedimiento o proceso hasta su atención.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section about-section fade-in">
+        <div class="about-grid">
+            <div>
+                <p class="eyebrow dark">Nuestro equipo</p>
+                <h2>Rigor técnico, trato directo y enfoque preventivo</h2>
+                <p>
+                    J&M Soluciones Jurídicas Contables orienta su trabajo a brindar respuestas claras, sostenidas en análisis normativo, revisión documental y estrategia práctica. La atención se enfoca en evitar contingencias, defender derechos y facilitar decisiones informadas.
+                </p>
+            </div>
+            <div class="about-card">
+                <h3>¿Por qué elegirnos?</h3>
+                <ul>
+                    <li>Atención personalizada según el tipo de caso.</li>
+                    <li>Revisión documental antes de definir una estrategia.</li>
+                    <li>Lenguaje claro, sin perder precisión técnica.</li>
+                    <li>Experiencia en materias jurídicas, contables y de gestión pública.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta fade-in">
+        <h2>¿Necesitas evaluar un caso, procedimiento o contingencia?</h2>
+        <p>Solicita una revisión inicial y recibe orientación sobre los pasos más adecuados.</p>
+        <a class="btn btn-primary" href="https://wa.me/51978381452?text=Hola%2C%20necesito%20evaluar%20un%20caso%20con%20J%26M" target="_blank" rel="noopener">Solicitar revisión inicial</a>
+    </section>
+</main>
+
+<footer class="footer-pro" id="contacto">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo J&M">
+                <div>
+                    <h3>J&M Soluciones Jurídicas Contables</h3>
+                    <p>Asesoría legal, contable y tributaria con enfoque estratégico.</p>
+                </div>
+            </div>
+                <p class="copy">© 2026 J&M Soluciones Jurídicas Contables. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p><i class="fa-solid fa-phone"></i> +51 978 381 452</p>
+            <p><i class="fa-solid fa-envelope"></i> contactojmsoluciones@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Atención en Chepén, Trujillo y Cajamarca</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Enlaces rápidos</h4>
+            <a href="#servicios">Servicios</a>
+            <a href="#metodo">Método de trabajo</a>
+            <a href="#nosotros">Nosotros</a>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/51978381452?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20J%26M" class="whatsapp-pro" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <span class="wa-text">¿Necesitas asesoría?</span>
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Cerrar detalle">×</button>
+        <p class="modal-eyebrow">Detalle del servicio</p>
+        <h3 id="modal-title"></h3>
+        <div id="modal-body" class="modal-body"></div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
